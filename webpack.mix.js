@@ -1,5 +1,4 @@
 let mix = require('laravel-mix');
-
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -11,5 +10,19 @@ let mix = require('laravel-mix');
  |
  */
 
+//Enable source map in dev environment
+if (process.env.NODE_ENV === 'development') {
+    mix.webpackConfig({
+        devtool: 'source-map',
+    });
+
+}
+
+//Autoload Bootstrap 4 dependencies
+mix.autoload({
+    jquery: ['$', 'window.jQuery', 'jQuery'],
+    'popper.js': ['Popper']
+});
+
 mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+    .sass('resources/assets/sass/app.scss', 'public/css');
