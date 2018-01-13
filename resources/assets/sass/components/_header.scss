@@ -1,0 +1,15 @@
+header{
+  border-bottom: 1px solid lighten($navbar-light-color, 80%);
+
+  .main-navbar{
+    padding: 0;
+    .nav-link{
+      padding: 20px;
+      line-height: 18px;
+    }
+    .nav-link.active{
+      color: $primary !important;
+    }
+  }
+
+}

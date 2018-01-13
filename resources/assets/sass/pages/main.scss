@@ -1,0 +1,7 @@
+/*
+* All Pages SCSS Goes here. And Every page style is namespaced, the naming
+* convention is ControllerName-Method, for example forHoweController@index
+* the namespace class will be .home-index, the common style will be moved
+* to top level outside the namespace.
+ */
+@import "home";

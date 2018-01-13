@@ -1,0 +1,30 @@
+footer {
+  padding: 70px 0;
+  background: $gray-900;
+  color: $gray-600;
+
+  .col {
+    h4 {
+      color: $gray-100;
+      text-transform: uppercase;
+    }
+  }
+
+  .footer__newsletter {
+    .form-group._name {
+      margin-right: 15px;
+    }
+    input {
+      background: $gray-800;
+      border-color: $gray-800;
+      color: $gray-100;
+      &:focus {
+        background-color: $gray-700;
+        border-color: $gray-200;
+        color: $gray-100;
+        outline: 0;
+        box-shadow: none;
+      }
+    }
+  }
+}

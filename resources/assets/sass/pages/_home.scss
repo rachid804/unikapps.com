@@ -1,0 +1,58 @@
+/*
+* HOME PAGE
+*/
+.home-index {
+  .bg-gray-100{
+    background-color: $gray-100;
+  }
+  /*
+  * Hi section
+  */
+  .hi-section {
+    width: 100%;
+    // TODO: To update later for responsive images
+    background: url(https://unikapps.com/img//bg_2048.jpg) fixed center center;
+    background-size: cover;
+    padding: 110px 0;
+    * {
+      margin-bottom: 20px;
+    }
+    h1 {
+      text-transform: uppercase;
+      font-size: 3em;
+    }
+    h2 {
+      font-size: 1.3em;
+      color: darken($white, 30%);
+    }
+  }
+
+  /*
+  * Home Sections
+  */
+  .section {
+    padding: 3em 0;
+
+    .section__heading {
+      text-align: center;
+      padding-bottom: 2em;
+      text-transform: uppercase;
+
+      h3 {
+        font-size: 2em;
+      }
+
+      span{
+        font-weight: 300;
+        font-size: 13px;
+      }
+    }
+
+  }
+  /*
+  * Recent Blog Posts
+  */
+  .recent-blog-posts {
+
+  }
+}

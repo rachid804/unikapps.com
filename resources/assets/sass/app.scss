@@ -1,5 +1,10 @@
-// Variables
+//Bootstrap functions
+@import "~bootstrap/scss/functions";
+// Override bootstrap Variables
 @import "abstracts/variables";
-
 // Bootstrap 4
 @import "~bootstrap/scss/bootstrap.scss";
+//Components
+@import "components/main.scss";
+//Pages
+@import "pages/main.scss";
